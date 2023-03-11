@@ -7,3 +7,6 @@ email = 'mansurovorkhan66@gmail.com'
 
 def f():
     return None
+
+class Person:
+    pass
