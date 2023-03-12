@@ -1,0 +1,26 @@
+git diff - axirinci commitden sonra neler (unstaged changes) deyisilib in directory. Eger stage/add olsa, hec ne gotermeyecek
+git commit -am  'message'- stage all/add and commit, bir command ile
+HEAD - last commit
+git diff HEAD - every change since last commit, staged olunmus ve olunmamis
+git diff --staged or --cached: shows changes only if staged
+git diff file1.py:narrow down for one file
+stashing - bir branchda ish gorursen, nese deyisiklik edirsen, commit elemeden obiri branche gedirsen
+1) if conflict olmasa, change ancaq append olarsa, commit edib o biri branche kecir
+2) if olana change olsa, switche qoymur
+-git stash: hansi branchedasansa, bu deyisikliyi remove edir, bir yere yazir, save dir. switch edirsen. qayidanda git stash pop-save olunmus
+yerden yazir
+git stash apply - hem pop kimi bu branche, hem de istesen basqa branche add ede bilersen 
+git stash list: all stash olunmuslar
+git stash drop stash@1 - hansini drop elesin, day istifade elemeyessen
+git stash clear - remove all list in stash
+git switch -c newbranch:create -c and switch to new branch. if exists, ust git switch master/other
+git checkout id of commit
+
+SSH:
+-ssh-keygen -t ed25519 -C "your_email@example.com"
+run, n passowrd, no file, onsuz da filei .ssh folderde yaradir.
+icindeki contenti copy ele githubda/setting/add SSH
+-git remote add <name:origin><URL in github>
+git remote rename <old><new>
+git remote remove <name>
+-git push <remote:origin> <branch:master>
